@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Days+One:100,200,300,400,500,600,700,800,900|Dosis:100,200,300,400,500,600,700,800,900');
+
+/* ---------------------------Colours------------------------------- */
+
+.navbar-colors {
+    background-color: rgb(64, 224, 208);
+    border-color: rgb(64, 224, 208);
+}
+
+
+/* ---------------------------Fonts------------------------------- */
+
+.navbar-brand {
+    color: #fff;
+    font-family: "Days One", sans-serif;
+}
+
+.nav-item {
+    color: #fff;
+    font-family: "Days One", sans-serif;
+}
