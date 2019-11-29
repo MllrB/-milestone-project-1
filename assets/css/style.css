@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Days+One:100,200,300,400,500,600,700,800,900|Dosis:100,200,300,400,500,600,700,800,900');
 
-/* ---------------------------Colours------------------------------- */
+/* ---------------------------Fonts & Colours------------------------------- */
 
 .navbar-colors {
     background-color: rgb(64, 224, 208);
     border-color: rgb(64, 224, 208);
 }
 
-.footer-colors {
-    color: #fff;
-}
-
-
-/* ---------------------------Fonts------------------------------- */
-
 .navbar-brand {
     color: #fff;
     font-family: "Days One", sans-serif;
+    text-align: center;
 }
 
 .nav-item {
@@ -25,7 +19,12 @@
 }
 
 .footer-logo {
-    color: #fff;
+    color: rgba(8, 175, 158, 0.5);
+    font-family: "Days One", sans-serif;
+}
+
+.social-links {
+    color: rgba(8, 175, 158, 0.5);
     font-family: "Days One", sans-serif;
 }
 
@@ -38,5 +37,47 @@
     margin-top: 40px;
     min-height: 80px;
     width: 100%;
-    background-color: rgb(64, 224, 208);
+    background-color: rgb(192, 224, 221);
 }
+
+.vertical-space {
+    margin-top: 40px
+}
+
+.footer-logo {
+    float: left;
+    margin-left: 15px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.social-links {
+    float: right;
+    padding: 0;
+    margin-right: 5%;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+
+/* ---------------------------Hovers------------------------------- */
+
+.footer-logo:hover {
+    color: rgb(8, 175, 158);
+    text-decoration: none;
+    margin-left: 25px;
+    transform: scale(1.15);
+}
+
+.social-links:hover {
+    color: rgb(8, 175, 158);
+    text-decoration: none;
+    transform: scale(1.15);
+}
+
+
+/* rgb(117, 155, 130) */
