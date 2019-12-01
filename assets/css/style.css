@@ -187,6 +187,7 @@ body {
 
 .products {
     margin-top: 5%;
+    margin-bottom: 5%;
     text-align: center;
 }
 
@@ -211,6 +212,10 @@ body {
     text-align: center;
 }
 
+.products p a {
+    text-decoration: none;
+}
+
 
 /* ----------Consumables----------- */
 
@@ -231,4 +236,19 @@ body {
 .inkshop-logo {
     max-height: 200px;
     margin-top: 30px;
+}
+
+
+/* ---------------------------Get a Quote Page------------------------------- */
+
+.form-step-one {
+    margin-left: 40%;
+}
+
+.form-step-one-item {
+    padding-top: 5px;
+}
+
+.form-step-one-item i {
+    padding-right: 8px;
 }
