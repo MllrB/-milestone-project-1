@@ -3,8 +3,12 @@
 /* ---------------------------Fonts & Colours------------------------------- */
 
 .navbar-colors {
-    background-color: rgb(64, 224, 208);
+    background-color: rgba(64, 224, 208, 0.8);
     border-color: rgb(64, 224, 208);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(8, 175, 158, 1);
 }
 
 .navbar-brand {
@@ -31,13 +35,31 @@
 
 /* ---------------------------Footer------------------------------- */
 
+.footer-background-image {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    min-height: 80px;
+    width: 100%;
+    background-image: url(/OfficePrinters/assets/media/officeblock2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .footer-container {
     margin: 0;
     padding: 0;
     margin-top: 40px;
     min-height: 80px;
     width: 100%;
-    background-color: rgb(192, 224, 221);
+    background-color: rgba(192, 224, 221, 0.95);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgb(192, 224, 221); */
 }
 
 .vertical-space {
