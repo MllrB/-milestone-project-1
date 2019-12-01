@@ -2,6 +2,11 @@
 
 /* ---------------------------Fonts & Colours------------------------------- */
 
+body {
+    font-family: "Dosis", sans-serif;
+    overflow-x: hidden;
+}
+
 .navbar-colors {
     background-color: rgba(64, 224, 208, 0.8);
     border-color: rgb(64, 224, 208);
@@ -32,19 +37,32 @@
     font-family: "Days One", sans-serif;
 }
 
+.sister-site {
+    color: rgba(6, 144, 130, 1);
+}
+
+.sister-site a {
+    color: rgba(6, 144, 130, 1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
 
 /* ---------------------------Footer------------------------------- */
 
 .footer-background-image {
     margin: 0;
     padding: 0;
-    margin-top: 40px;
     min-height: 80px;
     width: 100%;
     background-image: url(/OfficePrinters/assets/media/officeblock2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
 }
@@ -52,7 +70,6 @@
 .footer-container {
     margin: 0;
     padding: 0;
-    margin-top: 40px;
     min-height: 80px;
     width: 100%;
     background-color: rgba(192, 224, 221, 0.95);
@@ -105,5 +122,113 @@
     transform: scale(1.15);
 }
 
+.jumbotron .btn:hover {
+    transform: scale(1.05);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, .5);
+}
+
+.sister-site a:hover {
+    font-weight: 700;
+}
+
 
 /* rgb(117, 155, 130) */
+
+
+/* ---------------------------Index Page------------------------------- */
+
+
+/* ----------Jumbotron----------- */
+
+.jumbotron-image-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.quote-callout {
+    height: 80vh;
+    background-image: url(/OfficePrinters/assets/media/peaceful.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.jumbotron {
+    margin-top: 20vh;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, .9);
+}
+
+.jumbotron h2 {
+    font-weight: 800;
+}
+
+.jumbotron .lead {
+    font-weight: 500;
+}
+
+.jumbotron .btn {
+    background-color: rgb(64, 224, 208);
+    color: rgba(255, 255, 255, .8);
+    font-weight: 800;
+    transition: all 150ms ease-in-out;
+}
+
+
+/* ----------Products----------- */
+
+.products {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.products p {
+    font-weight: 300;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.products-divider {
+    background-color: rgba(64, 224, 208, 0.8);
+    width: 100px;
+    font-weight: 300;
+    margin: 25px auto;
+}
+
+.product-image {
+    background-size: contain;
+    max-height: 200px;
+    text-align: center;
+}
+
+
+/* ----------Consumables----------- */
+
+.sister-site {
+    width: 100%;
+    min-height: 360px;
+    background-color: rgba(64, 224, 208, 0.3);
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.sister-site i {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    color: rgba(64, 224, 208, 0.9);
+}
+
+.inkshop-logo {
+    max-height: 200px;
+    margin-top: 30px;
+}
