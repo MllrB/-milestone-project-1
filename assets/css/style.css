@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Days+One:100,200,300,400,500,600,700,800,900|Dosis:100,200,300,400,500,600,700,800,900');
-
-/* ---------------------------Fonts & Colours------------------------------- */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: "Dosis", sans-serif;
     overflow-x: hidden;
 }
+
+
+/* ---------------------------Fonts & Colours------------------------------- */
 
 .navbar-colors {
     background-color: rgba(64, 224, 208, 0.8);
@@ -39,6 +44,7 @@ body {
 
 .sister-site {
     color: rgba(6, 144, 130, 1);
+    background-color: rgba(64, 224, 208, 0.3);
 }
 
 .sister-site a {
@@ -49,6 +55,23 @@ body {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.get-a-quote-text {
+    color: rgb(91, 105, 101);
+}
+
+.form-heading {
+    background-color: rgba(64, 224, 208, 0.25);
+    color: rgba(91, 105, 101, 0.8);
+}
+
+.form-content-container {
+    background-color: rgba(64, 224, 208, 0.05);
 }
 
 
@@ -122,7 +145,7 @@ body {
     transform: scale(1.15);
 }
 
-.jumbotron .btn:hover {
+.btn:hover {
     transform: scale(1.05);
     color: rgba(255, 255, 255, 1);
     box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, .5);
@@ -222,7 +245,6 @@ body {
 .sister-site {
     width: 100%;
     min-height: 360px;
-    background-color: rgba(64, 224, 208, 0.3);
     text-align: center;
     padding-bottom: 100px;
 }
@@ -241,14 +263,146 @@ body {
 
 /* ---------------------------Get a Quote Page------------------------------- */
 
+
+/*----------------INPUTS----------------*/
+
+.row {
+    margin: 0;
+}
+
+input {
+    border-color: rgba(8, 175, 158, 0.4);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px 8px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+input [type=text] {
+    min-width: 30%;
+}
+
+input[type=radio] {
+    margin: 0;
+    padding: 0;
+}
+
+input[type=number] {
+    width: 40px;
+}
+
+.form-heading {
+    margin: 0;
+    padding: 15px 0px;
+    width: 100%;
+}
+
+.form-content-container {
+    padding: 20px 0px;
+}
+
 .form-step-one {
-    margin-left: 40%;
+    margin: 0;
+    padding: 0;
+    padding: 5px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.form-step-one-item {
-    padding-top: 5px;
+.form-step-two {
+    margin: 0;
+    padding: 0;
+    padding: 5px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.form-step-one-item i {
-    padding-right: 8px;
+.form-text-area {
+    margin: 0;
+    padding: 0;
+    padding-top: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-text-area label {
+    width: 90%;
+    margin-top: 30px;
+    display: block;
+}
+
+textarea {
+    border-color: rgba(8, 175, 158, 0.4);
+    border-radius: 4px;
+    border-style: solid;
+    width: 100%;
+    height: 180px;
+}
+
+.hidden-div {
+    width: 100%;
+    visibility: hidden;
+}
+
+.form-step-two label {
+    left: 10%;
+}
+
+@media screen and (min-width:768px) {
+    .form-step-two {
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+    }
+    .form-step-two label {
+        float: right;
+        margin-right: 20px;
+    }
+    .form-step-two input {
+        margin-left: 20px;
+    }
+    .form-step-two select {
+        margin-left: 20px;
+    }
+}
+
+.form-submit-button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-submit-button .btn {
+    background-color: rgb(64, 224, 208);
+    color: rgba(255, 255, 255, .8);
+    font-weight: 800;
+    transition: all 150ms ease-in-out;
+}
+
+.has-printer-in-mind {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+
+.no-printer-in-mind {
+    width: 100%;
+    visibility: visible;
+    height: 100%;
+}
+
+input[type=checkbox]:checked~.has-printer-in-mind {
+    visibility: visible;
+    height: 100%;
+}
+
+input[type=checkbox]:checked~.no-printer-in-mind {
+    visibility: hidden;
+    height: 0;
 }

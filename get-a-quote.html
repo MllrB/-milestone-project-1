@@ -39,104 +39,136 @@
 
     <!-- ------------------------------Main Body---------------------------- -->
 
-    <section>
-        <form class="container-fluid" id="quotation">
-            <h1>Get your quote in 2 short steps</h1>
-            <div class="row">
-                <h2>Step 1: Contact info</h2>
+    <section class="get-a-quote-text">
+        <form class="no-gutters container-fluid " id="quotation">
+            <div class="form-heading centeredText">
+                <h1>Get your quote in 2 short steps</h1>
+            </div>
+            <div class="form-content-container">
+                <div class="row form-step-one">
+                    <div class="col-12">
+                        <h2>Step 1: Contact info</h2>
+                    </div>
+                </div>
 
-
-                <div class="col-12 form-step-one-item">
-                    <i class="fas fa-building"></i>
-                    <input type="text" name="companyName" placeholder="Company Name">
+                <div class="row form-step-one">
+                    <div class="col-12">
+                        <label for="companyName"><i class="fas fa-building"></i></label>
+                        <input type="text" name="companyName" placeholder="Company Name">
+                    </div>
                 </div>
-                <div class="col-12 form-step-one-item">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="contactName" placeholder="Your Name">
+                <div class="row form-step-one">
+                    <div class="col-12">
+                        <label for="contactName"> <i class="fas fa-user"></i></label>
+                        <input type="text" name="contactName" placeholder="Your Name">
+                    </div>
                 </div>
-                <div class="col-12 form-step-one-item">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" name="emailAddress" placeholder="Your email address">
+                <div class="row form-step-one">
+                    <div class="col-12">
+                        <label for="emailAddress"><i class="fas fa-envelope"></i></label>
+                        <input type="email" name="emailAddress" placeholder="Your email address">
+                    </div>
                 </div>
-                <div class="col-12 form-step-one-item">
-                    <i class="fas fa-phone"></i>
-                    <input type="tel" name="contactNumber" min="10" placeholder="Your Phone Number">
+                <div class="row form-step-one">
+                    <div class="col-12">
+                        <label for="contactNumber"><i class="fas fa-phone"></i></label>
+                        <input type="tel" name="contactNumber" min="10" placeholder="Your Phone Number">
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
+
+            <div class="form-heading centeredText">
                 <h2> Step 2: Printer Requirements</h2>
                 <h6>Don't worry, we just need some basic information</h6>
-                <div class="col-12">
-                    <p> Do you already have a printer in mind and would just like pricing and availability information?
-                        <input type="radio" name="printerInMind" id="no" value="no" checked="checked"> No
-                        <input type="radio" name="printerInMind" id="yes" value="yes"> Yes
-                    </p>
-                </div>
-                <div class="col-12">
-                    <label for="printerModel">Printer Brand & Model</label>
-                    <input type="text" name="printerModel" placeholder="Printer Model" disabled>
-                </div>
-                <div class="col-12">
-                    <label for="targetPrice">Target Price €</label>
-                    <input type="text" name="targetPrice" placeholder="Target Price €" disabled>
-                </div>
-                <div class="col-12">
-                    <button type="submit" disabled>Request Your Quote</button>
-                </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <p> Do you need colour printing or black only?
-                        <input type="radio" name="colorOrMono" id="colour" value="colour" checked="checked"> Colour
-                        <input type="radio" name="colorOrMono" id="mono" value="mono"> Black Only
-                    </p>
+            <div class="row form-content-container">
+                <div class="col-12 centeredText">
+                    <label for="printerInMind"> Do you already have a printer in mind and just need price & availability info?</label>
+                    <input type="checkbox" name="printerInMind" id="printerInMind">
+                    <hr>
+                    <div class="row has-printer-in-mind">
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <label for="printerModel"> Printer Model</label>
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <input type="text" name="printerModel" id="printerModel">
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <label for="targetPrice"> Target Price</label>
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <input type="text" name="targetPrice" id="targetPrice">
+                        </div>
+                    </div>
+
+                    <div class="row no-printer-in-mind">
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <label for="colorOrMono"> Do you need colour printing or black only?</label>
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <input type="radio" name="colorOrMono" id="colour" value="colour" checked="checked"> Colour
+                            <input type="radio" name="colorOrMono" id="mono" value="mono"> Black Only
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <label for="mfp">Photocopy and scan functionality?</label>
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <input type="radio" name="mfp" id="yes" value="yes" checked="checked"> Yes
+                            <input type="radio" name="mfp" id="no" value="no"> No
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <label for="weeklyPrint"> What is your estimated weekly print volume?</label>
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <select name="weeklyPrint" id="weeklyPrint" form="quotation">
+                                        <option value="lessThan500">Less than 500</option>
+                                        <option value="lessThan1000">Less than 1000</option>
+                                        <option value="lessThan2000">Less than 2000</option>
+                                        <option value="moreThan2000">More than 2000</option>
+                                </select>
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <label for="howManyComputers"> How many computers need to be connected to this printer?</label>
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <input type="number" name="howManyComputers" value="1" min="1">
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <label for="prefferedBrand"> Do you have a prefferred brand?</label>
+                        </div>
+                        <div class="col-12 col-sm-6 form-step-two">
+                            <select name="prefferedBrand" id="prefferedBrand" form="quotation">
+                                <option value="noPreference">No Preference</option>
+                                <option value="brother">Brother</option>
+                                <option value="canon">Canon</option>
+                                <option value="epson">Epson</option>
+                                <option value="hp">HP</option>
+                                <option value="kyocera">Kyocera</option>
+                                <option value="lexmark">Lexmark</option>
+                                <option value="oki">OKI</option>
+                                <option value="samsung">Samsung</option>
+                            </select>
+                        </div>
+
+                    </div>
                 </div>
+
+
+
                 <div class="col-12">
-                    <p> Photocopy and scan functionality?
-                        <input type="radio" name="mfp" id="yes" value="yes" checked="checked"> Yes
-                        <input type="radio" name="mfp" id="no" value="no"> No
-                    </p>
+                    <div class="row align-items-start">
+                        <div class="d-none d-md-block col-sm-4 hidden-div">hidden div</div>
+                        <div class="col-12 col-md-4 form-text-area"><label for="extraInfo"> Any extra information you wish to provide </label>
+                            <textarea name="extraInfo"> </textarea>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12">
-                    <p>What is your estimated weekly print volume?
-                        <select name="weeklyPrint" id="weeklyPrint" form="quotation">
-                                <option value="lessThan500">Less than 500</option>
-                                <option value="lessThan1000">Less than 1000</option>
-                                <option value="lessThan2000">Less than 2000</option>
-                                <option value="moreThan2000">More than 2000</option>
-                        </select>
-                    </p>
+
+                <div class="col-12 form-submit-button">
+                    <button class="btn btn-lg" type="submit" disabled>Request Your Quote</button>
                 </div>
-                <div class="col-12">
-                    <p> How many (approx) computers need to be connected to this printer?
-                        <input type="number" name="howManyComputers" value="1" min="1">
-                    </p>
-                </div>
-                <div class="col-12">
-                    <p>Do you have a prefferred brand?
-                        <select name="prefferedBrand" id="prefferedBrand" form="quotation">
-                            <option value="noPreference">No Preference</option>
-                            <option value="brother">Brother</option>
-                            <option value="canon">Canon</option>
-                            <option value="epson">Epson</option>
-                            <option value="hp">HP</option>
-                            <option value="kyocera">Kyocera</option>
-                            <option value="lexmark">Lexmark</option>
-                            <option value="oki">OKI</option>
-                            <option value="samsung">Samsung</option>
-                        </select>
-                    </p>
-                </div>
-                <div class="col-12">
-                    <p>Any extra information you wish to provide</p>
-                    <input type="text" name="extraInfo">
-                </div>
-                <div class="col-12">
-                    <button type="submit" disabled>Request Your Quote</button>
-                </div>
-            </div>
         </form>
     </section>
 
