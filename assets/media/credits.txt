@@ -1,4 +1,5 @@
 stones:Photo by mali maeder
 office bloxk: Photo by Matthias Zomer
 
+problem with child overflowing parent solved by: https://stackoverflow.com/questions/38066204/prevent-child-div-from-overflowing-parent-div
 
