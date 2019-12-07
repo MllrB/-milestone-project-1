@@ -454,6 +454,10 @@ input[type=checkbox]:checked~.no-printer-in-mind {
 
 /* ---------------------------Products Page------------------------------- */
 
+.product-page-container {
+    margin-top: 50px;
+}
+
 .product-heading {
     margin-top: 20px;
 }
@@ -531,7 +535,8 @@ input[type=checkbox]:checked~.no-printer-in-mind {
 .product-page-brands-container {
     width: 100%;
     padding: 5% 0;
-    background-color: rgba(125, 126, 125, 0.1);
+    /* background-color: rgba(125, 126, 125, 0.1); */
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(192, 224, 221, 0.95));
     text-align: center;
 }
 
@@ -550,4 +555,47 @@ input[type=checkbox]:checked~.no-printer-in-mind {
     border: 5px none rgba(226, 228, 227, 0);
     border-radius: 50%;
     text-align: center;
+}
+
+
+/* ---------------------------Contact Us Page------------------------------- */
+
+.contact-us-container {
+    margin-bottom: 10%;
+}
+
+.contact-us-heading {
+    margin-top: 50px;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: "Days One", sans-serif;
+    color: rgb(8, 175, 158);
+}
+
+.contact-us-icon-container {
+    margin: 0;
+    padding: 2% 0;
+    width: 100%;
+    min-height: 200px;
+    color: rgba(60, 63, 62, 0.8);
+    font-size: 1.3em;
+}
+
+.contact-us-icon-container a {
+    text-decoration: none;
+    color: rgba(60, 63, 62, 0.8);
+    transition: all 500ms ease-in-out;
+}
+
+.contact-us-icon {
+    padding: 5% 0;
+    color: rgb(8, 175, 158);
+}
+
+.contact-us-button {
+    width: 100%;
+}
+
+.contact-us-icon-container:hover {
+    transform: scale(1.05);
 }
