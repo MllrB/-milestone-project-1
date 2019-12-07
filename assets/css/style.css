@@ -58,7 +58,7 @@ body {
     text-transform: uppercase;
 }
 
-.centeredText {
+.centered-text {
     text-align: center;
 }
 
@@ -73,6 +73,17 @@ body {
 
 .form-content-container {
     background-color: rgba(64, 224, 208, 0.05);
+}
+
+.product-page-color {
+    color: rgb(67, 68, 68);
+}
+
+.btn {
+    background-color: rgb(64, 224, 208);
+    color: rgba(255, 255, 255, .8);
+    font-weight: 800;
+    transition: all 150ms ease-in-out;
 }
 
 
@@ -438,4 +449,105 @@ input[type=checkbox]:checked~.has-printer-in-mind {
 input[type=checkbox]:checked~.no-printer-in-mind {
     visibility: collapse;
     height: 0;
+}
+
+
+/* ---------------------------Products Page------------------------------- */
+
+.product-heading {
+    margin-top: 20px;
+}
+
+.product-page-hr {
+    width: 60%;
+}
+
+.product-page-logo-container {
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.product-page-brand-logo {
+    max-height: 120px;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.product-page-printer-container {
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-page-printer {
+    max-height: 90%;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.product-page-product-info p {
+    font-size: 1em;
+}
+
+.product-page-icons-container {
+    max-width: 400px;
+    padding: 5%;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+}
+
+.product-page-icons-container:hover {
+    box-shadow: 0px 0px 10px 1px rgba(64, 224, 208, 1);
+    transform: scale(1.1);
+}
+
+.product-page-icons-container p {
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.product-page-icons {
+    padding-bottom: 10px;
+    color: rgba(64, 224, 208, 0.6);
+}
+
+.product-page-info {
+    padding-top: 10%;
+}
+
+.product-page-buttons {
+    min-width: 200px;
+    margin: 5% 0;
+    background-color: rgba(64, 224, 208, 0.6);
+    transition: all 500ms ease-in-out;
+}
+
+.product-page-buttons:hover {
+    background-color: rgba(64, 224, 208, 1);
+}
+
+.product-page-brands-container {
+    width: 100%;
+    padding: 5% 0;
+    background-color: rgba(125, 126, 125, 0.1);
+    text-align: center;
+}
+
+.product-page-brands-container h2 {
+    color: rgba(91, 105, 101, 0.8);
+}
+
+.product-page-brands {
+    padding: 2% 0;
+}
+
+.brand-images {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(226, 228, 227, 0);
+    border: 5px none rgba(226, 228, 227, 0);
+    border-radius: 50%;
+    text-align: center;
 }
