@@ -509,6 +509,32 @@ https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-g
     transition: all 500ms ease-in-out;
 }
 
+.modal-header {
+    background-color: rgb(64, 224, 208);
+    color: #fff;
+    font-family: "Days One", sans-serif;
+}
+
+button.close {
+    color: #fff;
+    transform: scale(1.5);
+}
+
+.modal-button {
+    max-width: 70%;
+}
+
+.modal-body {
+    margin-top: 10px;
+}
+
+.modal-footer {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-top-width: 1px;
+}
+
 .product-page-buttons:hover {
     background-color: rgba(64, 224, 208, 1);
 }
