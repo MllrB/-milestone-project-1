@@ -12,57 +12,203 @@
 </head>
 
 <body>
-    <!-- ------------------------header/navigation---------------------- -->
+    <div class="body-wrapper">
+        <!-- ------------------------header/navigation---------------------- -->
 
-    <nav class="navbar navbar-expand-md navbar-dark navbar-colors">
-        <a href="/OfficePrinters/index.html" class="navbar-brand">officeprinters.ie</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-colors">
+            <a href="/OfficePrinters/index.html" class="navbar-brand">officeprinters.ie</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="/OfficePrinters/get-a-quote.html" class="nav-link">Get a Quote</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/OfficePrinters/products.html" class="nav-link">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/OfficePrinters/about-us.html" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/OfficePrinters/contact-us.html" class="nav-link">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/OfficePrinters/get-a-quote.html" class="nav-link">Get a Quote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/OfficePrinters/products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/OfficePrinters/about-us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/OfficePrinters/contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <!-- ------------------------------Main Body---------------------------- -->
+        <!-- ------------------------------Main Body---------------------------- -->
+        <section class="no-gutters container-fluid">
+            <form action="">
+                <div class="no-gutters container-fluid form-group">
+                    <h1 class="centered-text page-heading">Get your quote in 2 short steps</h1>
+                    <div class="row container-fluid centered-text">
+                        <div class="col-12 form-section-heading">
+                            <h2>Step 1: Contact info</h2>
+                        </div>
 
-
-
-
-    <!-- ------------------------------Footer---------------------------- -->
-
-    <footer>
-        <div class="footer-background-image">
-            <div class="footer-container">
-                <div class="row">
-                    <div class="col-12 col-sm-4 footer-logo-container vertical-space ">
-                        <a href="/OfficePrinters/index.html" class="footer-logo">officeprinters.ie</a>
+                        <div class="col-12 form-section">
+                            <label for="companyName"><i class="fas fa-building fa-2x form-icon"></i></label>
+                            <input type="text" name="companyName" placeholder="Company Name" class="form-control form-step-one">
+                        </div>
+                        <div class="col-12 form-section">
+                            <label for="contactName"> <i class="fas fa-user fa-2x form-icon"></i></label>
+                            <input type="text" name="contactName" placeholder="Your Name" class="form-control form-step-one">
+                        </div>
+                        <div class="col-12 form-section">
+                            <label for="emailAddress"><i class="fas fa-envelope fa-2x form-icon"></i></label>
+                            <input type="email" name="emailAddress" placeholder="Your email address" class="form-control form-step-one">
+                        </div>
+                        <div class="col-12 form-section">
+                            <label for="contactNumber"><i class="fas fa-phone fa-2x form-icon"></i></label>
+                            <input type="tel" name="contactNumber" min="10" placeholder="Your Phone Number" class="form-control form-step-one">
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-8 footer-socials-container vertical-space">
-                        <a href="/OfficePrinters/contact-us.html" class="social-links">contact us</a>
-                        <a href="#" class="social-links social-icons"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social-links social-icons"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-links social-icons"><i class="fab fa-facebook-f"></i></a>
+
+                    <div class="row container-fluid centered-text form-section">
+                        <div class="col-12 form-section-heading">
+                            <h2>Step 2: Printer Requirements</h2>
+                        </div>
+
+                        <div class="d-none d-md-block col-md-2"></div>
+                        <div class="col-12 col-md-4 form-labels">
+                            <label for="colorOrMono"> Do you need colour printing or black only?</label>
+                        </div>
+                        <div class="col-4 d-md-none"></div>
+                        <div class="col-6 col-md-4 form-inputs custom-control custom-radio custom-control-inline">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="colorOrMono1" name="colorOrMono" class="custom-control-input">
+                                <label class="custom-control-label" for="colorOrMono1">Colour</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="colorOrMono2" name="colorOrMono" class="custom-control-input">
+                                <label class="custom-control-label" for="colorOrMono2">Black Only</label>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+
+                        <div class="d-none d-md-block col-md-2"></div>
+                        <div class="col-12 col-md-4 form-labels">
+                            <label for="mfp"> Do you need photocopying & scanning functionality?</label>
+                        </div>
+                        <div class="col-4 d-md-none"></div>
+                        <div class="col-4 col-md-4 form-inputs custom-control custom-radio custom-control-inline">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="mfp1" name="mfp" class="custom-control-input">
+                                <label class="custom-control-label" for="mfp1">No</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="mfp2" name="mfp" class="custom-control-input">
+                                <label class="custom-control-label" for="mfp2">Yes</label>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2"></div>
+
+                        <div class="d-none d-md-block col-md-2"></div>
+                        <div class="col-12 col-md-4 form-labels">
+                            <label for="mfp"> What is your estimated weekly print volume?</label>
+                        </div>
+                        <div class="col-12 col-md-4 form-inputs custom-control">
+                            <select class="custom-select custom-select-sm">
+                        <option selected>Less than 500 pages</option>
+                        <option value="1">Less than 1000 pages</option>
+                        <option value="2">Less than 2000 pages</option>
+                        <option value="3">More than 2000 pages</option>
+                    </select>
+                        </div>
+                        <div class="d-none d-md-block col-md-2"></div>
+
+                        <div class="d-none d-md-block col-md-2"></div>
+                        <div class="col-12 col-md-4 form-labels">
+                            <label for="howManyComputers"> How many computers need to be conntected to the printer?</label>
+                        </div>
+                        <div class="col-5 d-md-none"></div>
+                        <div class="col-5 col-md-4 custom-control form-inputs ">
+                            <input type="number" name="howManyComputers" min="1" value="1" class="form-control form-control-sm">
+                        </div>
+                        <div class="col-2"></div>
+
+                        <div class="d-none d-md-block col-md-2"></div>
+                        <div class="col-12 col-md-4 form-labels">
+                            <label for="mfp"> Do you have a preferred brand?</label>
+                        </div>
+                        <div class="col-12 col-md-4 form-inputs custom-control">
+                            <select class="custom-select custom-select-sm">
+                        <option value="noPreference" selected>No preference</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Canon">Canon</option>
+                        <option value="Epson">Epson</option>
+                        <option value="hp">HP</option>
+                        <option value="kyocera">Kyocera</option>
+                        <option value="lexmark">Lexmark</option>
+                        <option value="oki">OKI</option>
+                        <option value="samsung">Samsung</option>
+                    </select>
+                        </div>
+                        <div class="d-none d-md-block col-md-2"></div>
+
+                        <div class="d-none d-md-block col-md-2"></div>
+                        <div class="col-12 col-md-4 form-labels">
+                            <label for="mfp"> What is your approximate budget?</label>
+                        </div>
+                        <div class="col-4 d-md-none"></div>
+                        <div class="col-5 col-md-4 form-inputs custom-control">
+                            <label class="sr-only" for="inlineFormInputGroup">budget</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">€</div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroup" value="500" min="100" step="100">
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-2"></div>
+
 
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="row container-fluid">
+                    <div class="col-1 col-md-3"></div>
+                    <div class="col-10 col-md-6 form-group form-text-area">
+                        <label for="extraInfo" class="form-labels">Any extra information you wish to provide:</label>
+                        <textarea class="form-control" id="extraInfo" rows="6"></textarea>
+                    </div>
+                    <div class="d-none d-md-block col-md-3"></div>
+                </div>
+                <div class="row submit-button-container container-fluid">
+                    <div class="d-none d-md-block col-md-4"></div>
+                    <div class="col-12 col-md-4">
+                        <button class="btn btn-lg form-submit-button" type="submit">Request Your Quote</button>
+                    </div>
+                    <div class="d-none d-md-block col-md-4"></div>
+                </div>
 
-    </footer>
+            </form>
+        </section>
+
+
+        <!-- ------------------------------Footer---------------------------- -->
+
+        <footer>
+            <div class="footer-background-image">
+                <div class="footer-container">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 footer-logo-container vertical-space ">
+                            <a href="/OfficePrinters/index.html" class="footer-logo">officeprinters.ie</a>
+                        </div>
+                        <div class="col-12 col-sm-8 footer-socials-container vertical-space">
+                            <a href="/OfficePrinters/contact-us.html" class="social-links">contact us</a>
+                            <a href="#" class="social-links social-icons"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social-links social-icons"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-links social-icons"><i class="fab fa-facebook-f"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
