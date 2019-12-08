@@ -307,12 +307,22 @@ body {
 
 /* ---------------------------Get a Quote Page------------------------------- */
 
+.quote-page-heading {
+    margin-top: 50px;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: "Days One", sans-serif;
+    color: rgb(8, 175, 158)
+}
+
 .form-section {
     padding: 6px 0;
 }
 
 .form-section-heading {
     padding: 2% 0;
+    margin-top: 20px;
+    color: rgb(67, 68, 68);
 }
 
 .form-control {
@@ -540,7 +550,7 @@ https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-g
     font-size: 3em;
     font-weight: 900;
     font-family: "Days One", sans-serif;
-    color: rgb(8, 175, 158);
+    color: rgb(64, 224, 208);
 }
 
 .contact-us-icon-container {
