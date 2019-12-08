@@ -600,3 +600,56 @@ input[type=checkbox]:checked~.no-printer-in-mind {
 .contact-us-icon-container:hover {
     transform: scale(1.05);
 }
+
+
+/* ---------------------------About Us Page------------------------------- */
+
+.about-us-container {
+    margin-top: 40px;
+}
+
+.about-us-container h1 {
+    font-family: "Days One", sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: rgb(64, 224, 208);
+    text-transform: lowercase;
+    padding-bottom: 2%;
+}
+
+.about-us {
+    padding: 2%;
+    text-align: justify;
+}
+
+.about-us a {
+    text-decoration: none;
+    color: rgb(8, 175, 158);
+}
+
+.about-us a:hover {
+    color: rgb(64, 224, 208);
+}
+
+.about-us h2 {
+    text-align: center;
+    color: rgb(8, 175, 158);
+}
+
+.about-us h5 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.about-us img {
+    max-height: 40px;
+    vertical-align: middle;
+}
+
+.about-us-map {
+    width: 100%;
+    margin-top: 20px;
+    padding: 3% 0;
+}
