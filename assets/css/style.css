@@ -7,7 +7,6 @@
 body {
     width: 100%;
     font-family: "Dosis", sans-serif;
-    overflow-x: hidden;
 }
 
 .body-wrapper {
@@ -326,6 +325,7 @@ body {
 }
 
 .form-control {
+    display: inline-block;
     max-width: 20%;
     vertical-align: middle;
 }
@@ -343,7 +343,7 @@ body {
 
 .form-labels {
     margin: 0;
-    padding: 0 1%;
+    padding: 0 1rem;
     text-align: center;
 }
 
@@ -352,6 +352,7 @@ body {
     padding: 0;
     padding-bottom: 30px;
     text-align: center;
+    justify-content: center;
 }
 
 select {
@@ -425,6 +426,7 @@ https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-g
         padding-left: 15px;
         padding-top: 10px;
         text-align: left;
+        justify-content: left;
         vertical-align: middle;
     }
     .form-submit-button {
@@ -568,6 +570,7 @@ button.close {
 /* ---------------------------Contact Us Page------------------------------- */
 
 .contact-us-container {
+    padding: 0 15px;
     margin-bottom: 10%;
 }
 
@@ -625,7 +628,6 @@ button.close {
 }
 
 .about-us {
-    padding: 2%;
     text-align: justify;
 }
 
@@ -639,6 +641,7 @@ button.close {
 }
 
 .about-us h2 {
+    margin-top: 20px;
     text-align: center;
     color: rgb(8, 175, 158);
 }
@@ -659,4 +662,10 @@ button.close {
     width: 100%;
     margin-top: 20px;
     padding: 3% 0;
+}
+
+@media screen and (min-width: 768px) {
+    .about-us {
+        padding: 0;
+    }
 }

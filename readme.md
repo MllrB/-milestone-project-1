@@ -12,6 +12,19 @@ This website is intended to generate sales leads for printers in the B2B environ
 
 The primary goal of the site is for the customer to request a quotation.
 
+### User Stories
+
+##### The Site owner 
+* As the site owner, I want to advertise my business in order to attract new business customers
+* As the site owner, I want to provide a way for new customers to contact me to initiate the purchase of a new printer
+* As the site owner I want to direct all users, business or home users, to visit my existing ecommerce shop in order to purchase printer consumables
+
+##### The Customer 
+* As a customer, I want to get a quotation on a new printer for my office
+* As a customer, I want to reduce the workload involved in researching and choosing a new printer
+* As a customer I want to some information on the product or service provided by the company
+
+
 ### Design Considerations
 The website is targeted towards a corporate audience with an emphasis on reducing the user’s workload. With this in mind, my goal was to design the site to be professional in look and have a clean, uncluttered and relaxing feel. To achieve this I chose soft colours and clear, easily legible fonts.
 
@@ -29,22 +42,6 @@ I felt that a multi-page design was most suited to incorporating the following n
 * Easily accessible contact information
 * Some information about the company
 * Some information on the products the company provides
-
-
-### User Stories
-
-##### The Site owner 
-* As the site owner, I want to advertise my business in order to attract new business customers
-* As the site owner, I want to provide a way for new customers to contact me to initiate the purchase of a new printer
-* As the site owner I want to direct all users, business or home users, to visit my existing ecommerce shop in order to purchase printer consumables
-* As the site owner I want to provide prospective customers with confidence in our ability to provide a reliable business partner
-
-##### The Customer 
-* As a customer, I want to get a quotation on a new printer for my office
-* As a customer, I want to reduce the workload involved in researching and choosing a new printer
-* As a customer, I want to find the right printer to meet my requirements with the minimum necessary cost of ownership
-* As a customer I want to find a new printer and/or consumables supplier
-
 
 ### Wireframes
 
@@ -80,6 +77,23 @@ I had initially intended the following navigation structure, however, with the n
 
 ## Testing
 
+I tried to achieve the owner's user stories brief by:
+* providing information on the company on the about us page and also by showing the brands available and some sample products
+* providing contact information for the company and by providing a form for a customer to fill in order to request a quotation. There are links to this form on most of the pages on the website and on the product examples page, the "Request a Quote" button has a shortened version of the form with the intention of allowing the customer to declare their interest in that particular product.
+* providing links and information to the company's sister site on multiple relevant pages.
+
+In terms of the customers user stories, I met the brief by:
+* providing a form to fill in to request a quotation.
+* ensuring that the form is short with the only required information being the customer's contact details. 
+* providing information in the about us page, the brands available to source and some sample products.
+
+I have manually tested all the links on the site and all are successful. All external links ore set to open in a new tab using target="blank". All internal links work as required and the links from the landing page to the product page go directly to the product associated with that link (i.e. the Epson link centers on the Epson product and the OKI link centers on the OKI product).
+
+As intended, the contact form rejects entries if any of the required fields (company name, contact name, email address and contact phone number) are left bank. In addition, invalid email addresses and phone numbers with less than 7 digits are also rejected. If all fields are valid, the page refreshes. This is true for the form on the Get a Quote page and also for the modals launched via the products page.
+
+I used Chrome and Chrome developer tools to test layout and responsiveness and once I was happy with this I further tested accross multiple browsers - Chrome, Firefox, Edge, Safari and Opera. For mobile devices I tested on an iPhone, a Huawei android phone and also a Samsung Galaxy. I don't have access to a tablet size device so had to rely on Chrome developer tools to test this screen size. I encountered some issues with overflow on the right side of mobile devices. To counteract this I needed to use a wrapper around all the content on each page with the overflow-x set to hidden. There is still overflow on the Microsoft Edge browser although I think this is to do with additional navigation functionality on the browser itself.
+
+
 ## Deployment
 This site is hosted on GitHub pages and is deployed from the master branch.
 * Git Repository: https://github.com/MllrB/OfficePrinters
@@ -87,10 +101,29 @@ This site is hosted on GitHub pages and is deployed from the master branch.
 * Link: [OfficePrinters](https://mllrb.github.io/OfficePrinters/)
 
 #### To run locally...
-#### Either 
-* clone this repository by running the command `git clone https://github.com/MllrB/OfficePrinters.git` in your terminal.
-#### Or
-* open using GitPod by clicking the GitPod button to the right of this repository 
+**Either** clone this repository by running the command `git clone https://github.com/MllrB/OfficePrinters.git` in your terminal.
+
+**Or** open using GitPod by clicking the GitPod button to the right of this repository 
+
+## Credits
+
+### Content
+
+* All text on the site was written by me.
+* Icons provided by [FontAwesome](https://fontawesome.com/)
+* Fonts provided by [Google Fonts](https://fonts.google.com/)
+* Maps provided by [Google Maps](https://goo.gl/maps/3MoyscgQnwBb2USa6)
+
+### Media
+* Landing page photo downloaded from [Canva](https://www.canva.com/), photo by Mali Maeder
+* Footer background photo downloaded from [Canva](https://www.canva.com/), photo by Matthias Zomer
+
+### Acknowledgements
+
+* 
+
+
+
 
 
 
