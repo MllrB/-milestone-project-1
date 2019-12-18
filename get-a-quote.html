@@ -13,7 +13,7 @@
 
 <body>
     <div class="body-wrapper">
-        <!-- ------------------------header/navigation---------------------- -->
+        <!-- ************************** header/navigation ************************** -->
 
         <nav class="navbar navbar-expand-md navbar-dark navbar-colors">
             <a href="/OfficePrinters/index.html" class="navbar-brand">officeprinters.ie</a>
@@ -38,9 +38,9 @@
             </div>
         </nav>
 
-        <!-- ------------------------------Main Body---------------------------- -->
+        <!-- ************************** Main Body ************************** -->
         <section class="no-gutters container-fluid">
-            <form action="">
+            <form>
                 <div class="no-gutters container-fluid form-group">
                     <h1 class="centered-text quote-page-heading">Get your quote in 2 short steps</h1>
                     <div class="row container-fluid centered-text">
@@ -52,19 +52,19 @@
 
                         <div class="col-12 form-section">
                             <label for="companyName"><i class="fas fa-building fa-2x form-icon"></i></label>
-                            <input type="text" name="companyName" placeholder="Company Name" class="form-control form-step-one" required>
+                            <input type="text" name="companyName" id="companyName" placeholder="Company Name" class="form-control form-step-one" required>
                         </div>
                         <div class="col-12 form-section">
                             <label for="contactName"> <i class="fas fa-user fa-2x form-icon"></i></label>
-                            <input type="text" name="contactName" placeholder="Your Name" class="form-control form-step-one" required>
+                            <input type="text" name="contactName" id="contactName" placeholder="Your Name" class="form-control form-step-one" required>
                         </div>
                         <div class="col-12 form-section">
                             <label for="emailAddress"><i class="fas fa-envelope fa-2x form-icon"></i></label>
-                            <input type="email" name="emailAddress" placeholder="Your email address" class="form-control form-step-one" required>
+                            <input type="email" name="emailAddress" id="emailAddress" placeholder="Your email address" class="form-control form-step-one" required>
                         </div>
                         <div class="col-12 form-section">
                             <label for="contactNumber"><i class="fas fa-phone fa-2x form-icon"></i></label>
-                            <input type="tel" name="contactNumber" minlength=7 placeholder="Your Phone Number" class="form-control form-step-one" required>
+                            <input type="tel" name="contactNumber" id="contactNumber" minlength=7 placeholder="Your Phone Number" class="form-control form-step-one" required>
                         </div>
                     </div>
 
@@ -77,7 +77,7 @@
 
                         <div class="d-none d-md-block col-md-2"></div>
                         <div class="col-12 col-md-4 form-labels">
-                            <label for="colorOrMono"> Do you need colour printing or black only?</label>
+                            <label> Do you need colour printing or black only?</label>
                         </div>
                         <div class="col-4 d-md-none"></div>
                         <div class="col-12 col-md-4 form-inputs custom-control custom-radio custom-control-inline">
@@ -94,7 +94,7 @@
 
                         <div class="d-none d-md-block col-md-2"></div>
                         <div class="col-12 col-md-4 form-labels">
-                            <label for="mfp"> Do you need photocopying & scanning functionality?</label>
+                            <label> Do you need photocopying & scanning functionality?</label>
                         </div>
                         <div class="col-4 d-md-none"></div>
                         <div class="col-4 col-md-4 form-inputs custom-control custom-radio custom-control-inline">
@@ -111,7 +111,7 @@
 
                         <div class="d-none d-md-block col-md-2"></div>
                         <div class="col-12 col-md-4 form-labels">
-                            <label for="mfp"> What is your estimated weekly print volume?</label>
+                            <label> What is your estimated weekly print volume?</label>
                         </div>
                         <div class="col-12 col-md-4 form-inputs custom-control">
                             <select class="custom-select custom-select-sm">
@@ -128,13 +128,13 @@
                             <label for="howManyComputers"> How many computers need to be conntected to the printer?</label>
                         </div>
                         <div class="col-12 col-md-4 custom-control form-inputs">
-                            <input type="number" name="howManyComputers" min="1" value="1" class="form-control form-control-sm">
+                            <input type="number" name="howManyComputers" id="howManyComputers" min="1" value="1" class="form-control form-control-sm">
                         </div>
                         <div class="col-2"></div>
 
                         <div class="d-none d-md-block col-md-2"></div>
                         <div class="col-12 col-md-4 form-labels">
-                            <label for="mfp"> Do you have a preferred brand?</label>
+                            <label> Do you have a preferred brand?</label>
                         </div>
                         <div class="col-12 col-md-4 form-inputs custom-control">
                             <select class="custom-select custom-select-sm">
@@ -153,7 +153,7 @@
 
                         <div class="d-none d-md-block col-md-2"></div>
                         <div class="col-12 col-md-4 form-labels">
-                            <label for="mfp"> What is your approximate budget?</label>
+                            <label> What is your approximate budget?</label>
                         </div>
                         <div class="col-4 d-md-none"></div>
                         <div class="col-5 col-md-4 form-inputs custom-control">
@@ -190,7 +190,7 @@
         </section>
 
 
-        <!-- ------------------------------Footer---------------------------- -->
+        <!-- ************************** Footer ************************** -->
 
         <footer>
             <div class="footer-background-image">

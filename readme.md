@@ -9,6 +9,7 @@ This website is intended to generate sales leads for printers in the B2B environ
 
 
 ## UX
+---------
 
 The primary goal of the site is for the customer to request a quotation.
 
@@ -54,6 +55,7 @@ I had initially intended the following navigation structure, however, with the n
 
 
 ## Features
+---------
 
 ### Existing Features
 1. A landing page directing users to a contact form with a view to getting a quotation for a printer. The landing page also features a snapshot of the products page and a link to a sister site which offers printer consumables.
@@ -71,11 +73,13 @@ I had initially intended the following navigation structure, however, with the n
 1. Modal thanking the customer for submitting their quotation request
 
 ## Technologies Used
+---------
 * HTML
 * CSS
 * Bootstrap 4.4.1
 
 ## Testing
+---------
 
 I tried to achieve the owner's user stories brief by:
 * providing information on the company on the about us page and also by showing the brands available and some sample products
@@ -94,7 +98,23 @@ As intended, the contact form rejects entries if any of the required fields (com
 I used Chrome and Chrome developer tools to test layout and responsiveness and once I was happy with this I further tested accross multiple browsers - Chrome, Firefox, Edge, Safari and Opera. For mobile devices I tested on an iPhone, a Huawei android phone and also a Samsung Galaxy. I don't have access to a tablet size device so had to rely on Chrome developer tools to test this screen size. I encountered some issues with overflow on the right side of mobile devices. To counteract this I needed to use a wrapper around all the content on each page with the overflow-x set to hidden. There is still overflow on the Microsoft Edge browser although I think this is to do with additional navigation functionality on the browser itself.
 
 
+I validated my CSS and HTML using [jigsaw.w3.org/](https://jigsaw.w3.org/css-validator/) and [validator.w3.org/](https://validator.w3.org/).   All tests passed except:
+
+CSS: 
+* -webkit-transition is an unknown vendor extension
+* -moz-transition is an unknown vendor extension
+* -o-transition is an unknown vendor extension
+
+Solution: Non-critical, ignored
+
+HTML:
+*  Bad value 100% for attribute width on element iframe: Expected a digit but saw % instead.
+
+Solution: Value of 100% is necessary to fill the div, ignored
+
+
 ## Deployment
+----------
 This site is hosted on GitHub pages and is deployed from the master branch.
 * Git Repository: https://github.com/MllrB/OfficePrinters
 * URL:  `https://mllrb.github.io/OfficePrinters/ `	
@@ -106,6 +126,7 @@ This site is hosted on GitHub pages and is deployed from the master branch.
 **Or** open using GitPod by clicking the GitPod button to the right of this repository 
 
 ## Credits
+---------
 
 ### Content
 
@@ -117,10 +138,15 @@ This site is hosted on GitHub pages and is deployed from the master branch.
 ### Media
 * Landing page photo downloaded from [Canva](https://www.canva.com/), photo by Mali Maeder
 * Footer background photo downloaded from [Canva](https://www.canva.com/), photo by Matthias Zomer
+* Brand logos downloaded from [brandsoftheworld.com](https://www.brandsoftheworld.com/)
+* Printer images courtesy of Epson Neon and OKI PartnerNet (both partner portals)
 
 ### Acknowledgements
 
-* 
+* Solution to how to style bootstrap inputs from [igaster](https://stackoverflow.com/users/1680535/igaster)  :  [(Solution)](https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow)
+* Solution to how to style bootstrap radio buttons and checkboxes from [webdevbooster](https://stackoverflow.com/users/8270343/webdevbooster)  :  [(Solution)](https://stackoverflow.com/questions/48401587/bootstrap4-radio-button-background-and-fill-color)
+* Resources used: [Bootstrap Documentation](https://getbootstrap.com/docs/4.4/getting-started/introduction/) nd [CSSTricks](https://css-tricks.com/)
+
 
 
 

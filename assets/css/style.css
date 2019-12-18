@@ -128,6 +128,7 @@ body {
 
 .footer-logo {
     letter-spacing: .2em;
+    padding-left: 2%;
     transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -560,9 +561,6 @@ button.close {
 .brand-images {
     width: 100px;
     height: 100px;
-    background-color: rgba(226, 228, 227, 0);
-    border: 5px none rgba(226, 228, 227, 0);
-    border-radius: 50%;
     text-align: center;
 }
 
@@ -594,7 +592,7 @@ button.close {
 .contact-us-icon-container a {
     text-decoration: none;
     color: rgba(60, 63, 62, 0.8);
-    transition: all 500ms ease-in-out;
+    transition: all 1000ms ease-in-out;
 }
 
 .contact-us-icon {
@@ -607,8 +605,19 @@ button.close {
     width: 100%;
 }
 
-.contact-us-icon-container:hover {
-    transform: scale(1.05);
+.contact-us-icon-container:hover .contact-us-icon {
+    color: rgb(64, 224, 208);
+    animation: bounce 300ms ease-in-out 0s alternate 2 none running;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 10%;
+        transform: translateY(-10%);
+    }
 }
 
 

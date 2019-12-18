@@ -14,7 +14,7 @@
 <body>
 
     <div class="body-wrapper">
-        <!-- ------------------------header/navigation---------------------- -->
+        <!-- ************************** header/navigation ************************** -->
 
         <nav class="navbar navbar-expand-md navbar-dark navbar-colors">
             <a href="/OfficePrinters/index.html" class="navbar-brand">officeprinters.ie</a>
@@ -39,7 +39,7 @@
             </div>
         </nav>
 
-        <!-- ------------------------------Main Body---------------------------- -->
+        <!-- ************************** Main Body ************************** -->
 
         <section class="container-fluid product-page-container">
 
@@ -100,7 +100,6 @@
                     <a href="https://www.epson.ie/advantage-inkjet" target="blank" class="btn btn-lg product-page-buttons" role="button">Learn more</a>
                 </div>
                 <div class="col-12 col-md-5 centered-text">
-                    <!-- <a href="/OfficePrinters/get-a-quote.html" class="btn btn-lg product-page-buttons" role="button">Request a Quote</a> -->
                     <button type="button" class="btn btn-lg product-page-buttons" data-toggle="modal" data-target="#epsonModal">Request a Quote</button>
                     <div class="modal fade" id="epsonModal" tabindex="-1" role="dialog" aria-labelledby="epsonModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="form">
@@ -111,23 +110,23 @@
                                             <span aria-hidden="true">&times;</span>
                                           </button>
                                 </div>
-                                <form action="">
+                                <form>
                                     <div class="modal-body form-group">
                                         <div class="col-12 form-section">
                                             <label for="companyName"><i class="fas fa-building fa-2x form-icon"></i></label>
-                                            <input type="text" name="companyName" placeholder="Company Name" class="form-control form-step-one" required>
+                                            <input type="text" name="companyName" id="companyName" placeholder="Company Name" class="form-control form-step-one" required>
                                         </div>
                                         <div class="col-12 form-section">
                                             <label for="contactName"> <i class="fas fa-user fa-2x form-icon"></i></label>
-                                            <input type="text" name="contactName" placeholder="Your Name" class="form-control form-step-one" required>
+                                            <input type="text" name="contactName" id="contactName" placeholder="Your Name" class="form-control form-step-one" required>
                                         </div>
                                         <div class="col-12 form-section">
                                             <label for="emailAddress"><i class="fas fa-envelope fa-2x form-icon"></i></label>
-                                            <input type="email" name="emailAddress" placeholder="Your email address" class="form-control form-step-one" required>
+                                            <input type="email" name="emailAddress" id="emailAddress" placeholder="Your email address" class="form-control form-step-one" required>
                                         </div>
                                         <div class="col-12 form-section">
                                             <label for="contactNumber"><i class="fas fa-phone fa-2x form-icon"></i></label>
-                                            <input type="tel" name="contactNumber" minlength=7 placeholder="Your Phone Number" class="form-control form-step-one" required>
+                                            <input type="tel" name="contactNumber" id="contactNumber" minlength=7 placeholder="Your Phone Number" class="form-control form-step-one" required>
                                         </div>
                                     </div>
                                     <div class="modal-footer centered-text">
@@ -212,23 +211,23 @@
                                                 <span aria-hidden="true">&times;</span>
                                               </button>
                                 </div>
-                                <form action="">
+                                <form>
                                     <div class="modal-body form-group">
                                         <div class="col-12 form-section">
-                                            <label for="companyName"><i class="fas fa-building fa-2x form-icon"></i></label>
-                                            <input type="text" name="companyName" placeholder="Company Name" class="form-control form-step-one" required>
+                                            <label for="companyNameOKI"><i class="fas fa-building fa-2x form-icon"></i></label>
+                                            <input type="text" name="companyName" id="companyNameOKI" placeholder="Company Name" class="form-control form-step-one" required>
                                         </div>
                                         <div class="col-12 form-section">
-                                            <label for="contactName"> <i class="fas fa-user fa-2x form-icon"></i></label>
-                                            <input type="text" name="contactName" placeholder="Your Name" class="form-control form-step-one" required>
+                                            <label for="contactNameOKI"> <i class="fas fa-user fa-2x form-icon"></i></label>
+                                            <input type="text" name="contactName" id="contactNameOKI" placeholder="Your Name" class="form-control form-step-one" required>
                                         </div>
                                         <div class="col-12 form-section">
-                                            <label for="emailAddress"><i class="fas fa-envelope fa-2x form-icon"></i></label>
-                                            <input type="email" name="emailAddress" placeholder="Your email address" class="form-control form-step-one" required>
+                                            <label for="emailAddressOKI"><i class="fas fa-envelope fa-2x form-icon"></i></label>
+                                            <input type="email" name="emailAddress" id="emailAddressOKI" placeholder="Your email address" class="form-control form-step-one" required>
                                         </div>
                                         <div class="col-12 form-section">
-                                            <label for="contactNumber"><i class="fas fa-phone fa-2x form-icon"></i></label>
-                                            <input type="tel" name="contactNumber" minlength=7 placeholder="Your Phone Number" class="form-control form-step-one" required>
+                                            <label for="contactNumberOKI"><i class="fas fa-phone fa-2x form-icon"></i></label>
+                                            <input type="tel" name="contactNumber" id="contactNumberOKI" minlength=7 placeholder="Your Phone Number" class="form-control form-step-one" required>
                                         </div>
                                     </div>
                                     <div class="modal-footer centered-text">
@@ -273,7 +272,7 @@
             </div>
         </section>
 
-        <!-- ------------------------------Footer---------------------------- -->
+        <!-- ************************** Footer ************************** -->
 
         <footer>
             <div class="footer-background-image">
