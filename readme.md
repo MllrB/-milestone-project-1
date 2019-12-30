@@ -46,12 +46,12 @@ I felt that a multi-page design was most suited to incorporating the following n
 
 ### Wireframes
 
-[Site Wireframes](/OfficePrinters/docs/officeprinters_Wireframes.pdf)
+[Site Wireframes](../docs/officeprinters_Wireframes.pdf)
 
 ##### Navigation
 I had initially intended the following navigation structure, however, with the nav bar displayed on every page, there was no need to try to implement it as it is possible to navigate to all pages from any page.
 
-![Initially Intended Navigation Structure](/OfficePrinters/assets/media/navigation-structure.png)
+![Initially Intended Navigation Structure](../assets/media/navigation-structure.png)
 
 
 ## Features
