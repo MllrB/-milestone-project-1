@@ -34,7 +34,7 @@ My intuition was that most business user’s would be researching new printers b
 I felt that a multi-page design was most suited to incorporating the following needs:
 
 ##### Needs of the Site Owner 
-* Contact Form: A short form with the customers contact information and basic information on the customers requirements. This is the most important feature of the website and all pages have a link to it.
+* Contact Form: A short form with the customer's contact information and basic information on the customer's requirements. This is the most important feature of the website and all pages have a link to it.
 * A product page showcasing a few products the owner can provide and the brands the owner can source.
 * Information about the company and links to the sister site.
 
@@ -46,7 +46,7 @@ I felt that a multi-page design was most suited to incorporating the following n
 
 ### Wireframes
 
-[Site Wireframes](/OfficePrinters/officeprinters_Wireframes.pdf)
+[Site Wireframes](/OfficePrinters/docs/officeprinters_Wireframes.pdf)
 
 ##### Navigation
 I had initially intended the following navigation structure, however, with the nav bar displayed on every page, there was no need to try to implement it as it is possible to navigate to all pages from any page.
@@ -62,7 +62,7 @@ I had initially intended the following navigation structure, however, with the n
 
 1. A short contact form allowing users to request a quotation by filling in some basic information about themselves and their requirements.
 
-1. A product page showcasing a couple of the products on offer and the brands available to the company. Each product has a logo, an image, some quick benefits to the product and a link to more information. There is also a request a quote button which opens a modal asking for contact information. I intend for this to alert the site owner to the customers interest in a particular product although this feature is not functional at present.
+1. A product page showcasing a couple of the products on offer and the brands available to the company. Each product has a logo, an image, some quick benefits to the product and a link to more information. There is also a request a quote button which opens a modal asking for contact information. I intend for this to alert the site owner to the customer's interest in a particular product although this feature is not functional at present.
 
 1. An About Us page displaying some information about the company and a map showing where the company is situated 
 
@@ -86,7 +86,7 @@ I tried to achieve the owner's user stories brief by:
 * providing contact information for the company and by providing a form for a customer to fill in order to request a quotation. There are links to this form on most of the pages on the website and on the product examples page, the "Request a Quote" button has a shortened version of the form with the intention of allowing the customer to declare their interest in that particular product.
 * providing links and information to the company's sister site on multiple relevant pages.
 
-In terms of the customers user stories, I met the brief by:
+In terms of the customer user stories, I met the brief by:
 * providing a form to fill in to request a quotation.
 * ensuring that the form is short with the only required information being the customer's contact details. 
 * providing information in the about us page, the brands available to source and some sample products.
@@ -115,7 +115,9 @@ Solution: Value of 100% is necessary to fill the div, ignored
 
 ## Deployment
 ----------
-This site is hosted on GitHub pages and is deployed from the master branch.
+
+To deploy this site,  I opened my GitHub repository and selected "Settings". From there I scolled down to the GitHub Pages section and selected the source as my Master Branch.
+
 * Git Repository: https://github.com/MllrB/OfficePrinters
 * URL:  `https://mllrb.github.io/OfficePrinters/ `	
 * Link: [OfficePrinters](https://mllrb.github.io/OfficePrinters/)

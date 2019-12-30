@@ -114,7 +114,6 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    /* background-color: rgb(192, 224, 221); */
 }
 
 .social-icons {
@@ -198,9 +197,6 @@ body {
 .sister-site a:hover {
     font-weight: 700;
 }
-
-
-/* rgb(117, 155, 130) */
 
 
 /* ---------------------------Index Page------------------------------- */
