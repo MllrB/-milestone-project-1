@@ -125,7 +125,7 @@ To deploy this site,  I opened my GitHub repository and selected "Settings". Fro
 #### To run locally...
 **Either** clone this repository by running the command `git clone https://github.com/MllrB/OfficePrinters.git` in your terminal.
 
-**Or** open using GitPod by clicking the GitPod button to the right of this repository 
+**Or** if you have the browser extension installed you can open using GitPod by clicking the GitPod button to the right of this repository 
 
 ## Credits
 ---------
@@ -147,11 +147,4 @@ To deploy this site,  I opened my GitHub repository and selected "Settings". Fro
 
 * Solution to how to style bootstrap inputs from [igaster](https://stackoverflow.com/users/1680535/igaster)  :  [(Solution)](https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow)
 * Solution to how to style bootstrap radio buttons and checkboxes from [webdevbooster](https://stackoverflow.com/users/8270343/webdevbooster)  :  [(Solution)](https://stackoverflow.com/questions/48401587/bootstrap4-radio-button-background-and-fill-color)
-* Resources used: [Bootstrap Documentation](https://getbootstrap.com/docs/4.4/getting-started/introduction/) nd [CSSTricks](https://css-tricks.com/)
-
-
-
-
-
-
-
+* Resources used: [Bootstrap Documentation](https://getbootstrap.com/docs/4.4/getting-started/introduction/) and [CSSTricks](https://css-tricks.com/)
